@@ -1,0 +1,19 @@
+# Handpan Lessons: David Kuckhermann ???
+# link ????
+# Groove: 
+[N0,N1,N6,N0,N1,N6,N0,G,^
+N0,N1,N6,N0,N1,N6,N7,N8,^
+N0,N2,N6,N0,N2,N6,N0,G,^
+N0,G,N6,N0,G,N6,G,N4,^
+N0,N1,N6,N0,N1,N6,N0,G,^
+N0,N1,N6,N0,N1,N6,N7,N8,^
+N0,N2,N6,N0,N2,N6,N0,G,^
+N0,G,N3,N3,N5,G,G,N4,^
+N0,N1,N8,N0,N1,N8,N0,G,^
+N0,N1,N8,N0,N1,N8,N7,N6,^
+G,N2,N6,N0,N2,N6,N0,G,^
+N0,N2,N6,N0,N2,N6,N5,N4,^
+N0,G,N8,N0,G,N8,N0,G,^
+N0,G,N8,N0,G,N8,G,N6,^
+G,N2,N6,N0,N2,N6,N0,G,^
+N0,G,N8,N8,N7,N6,N5,N4]
