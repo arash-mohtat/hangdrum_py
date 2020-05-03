@@ -59,11 +59,11 @@ def extractNotes(outputMode='lst'):
     recording, samplerate = sf.read(data_dir+'Notes_Mallet.wav')
     data = (recording[:,0]+recording[:,1])/2
     
-    # isolate notes sequences [N0,N1,...,N8,T]
+    # isolate notes sequences [N0,N1,...,N8,S]
     start_idx = [117753,362230,667470,1007450,1297510,1548040,1777330,2009480,2295930,2791970]
     L_notes = 100000 # samples sequence length per note
     notes = [data[idx:idx+L_notes] for idx in start_idx]
-    notes.append(0.025*notes[-1])  # appending the Ghost note (G=0.1*T)
+    notes.append(0.025*notes[-1])  # appending the Ghost note (G=0.1*S)
 
     # prepare the output
     if outputMode == 'lst':
@@ -81,9 +81,8 @@ def parseUserInput2Music(userInString):
         notesSeq = eval(userInString) # assuming the user's input is safe!!!
         return notesSeq
     except:
-        print('Some exception happened.')
         print('Only notes N0,N1,N2,N3,N4,N5,N6,N7,N8,S,G are allowed.')
-        print('The notes should be seperated by commas with the entire sequence enclosed in [].')
+        print('The notes must be seperated by commas with no empty spaces and the entire sequence enclosed in [].')
 
 def play_music(notesSeq,tempo=200.0):
     

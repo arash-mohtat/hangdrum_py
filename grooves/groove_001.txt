@@ -1,0 +1,19 @@
+# Handpan Version of "The Last of the Mohicans"
+# Groove: 
+[N6,G,G,N5,N4,N1,^
+G,N4,N6,N5,N7,G,^
+G,G,N6,1.25*N8,G,G,^
+N7,N6,N5,N7,G,G,^
+N5,G,G,1.25*N4,G,G,^
+N6,G,G,N5,N4,N1,^
+G,N4,N6,N5,N7,G,^
+N6,N5,G,N6,1.25*N8,G,^
+N7,N6,N5,N7,G,G,^
+N5,G,G,1.25*N4,G,G,^
+G,N6,N5,N4,G,G,^
+G,N4,N3,N1,G,G,^
+G,N6,N5,N4,G,G,^
+G,N4,N3,N8,G,G,^
+G,N6,N7,1.25*N8,G,G,^
+N7,N6,N5,N7,G,G,^
+N5,G,G,1.25*N4,G,G]
