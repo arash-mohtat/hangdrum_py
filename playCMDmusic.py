@@ -25,7 +25,7 @@ import numpy as np
 import simpleaudio as sa
 import soundfile as sf
 
-def sa_play(data,fs=44100, normalize=False): 
+def sa_play(data,fs=44100, normalize=False, wait=True): 
     """ plays the audio data, i.e. a numpy array of shape (N,2), on the
     audio device and waits for the playback to finish. If the audio data
     has a single channel, that channel is duplicated on right and left."""
@@ -50,7 +50,8 @@ def sa_play(data,fs=44100, normalize=False):
     play_obj = sa.play_buffer(audio, 2, 2, fs) # 2 bytes per sample with int16!
     
     # Wait for playback to finish before exiting
-    play_obj.wait_done()
+    if wait:
+        play_obj.wait_done()
 
 def extractNotes(outputMode='lst'):
 
